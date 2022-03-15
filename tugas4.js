@@ -4,3 +4,4 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
         console.log(e.name)
     }))
     .catch(err => console.log(err))
+ 

@@ -1,5 +1,5 @@
 const cekAngkaBagi = (angka1, angka2) =>{
-    return new Promise((resolve, reject)=>{
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             const bagi = angka1 / angka2
 
@@ -23,7 +23,7 @@ cekAngkaBagi(22,0)
 
 
 const cekPalindrom = (word) => {
-    return new Promise((resolve, reject)=>{
+    return new Promise((resolve, reject) => {
         const reverse = word.toLowerCase().split("").reverse().join("")
 
         if(reverse==word.toLowerCase()){

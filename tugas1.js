@@ -1,5 +1,5 @@
 const cekHariKerja = (day) => {
-    return new Promise((resolve, reject)=> {
+    return new Promise((resolve, reject) => {
         setTimeout(()=>{
             const dataDay = ['senin','selasa','rabu','kamis','jumat']
             let cek = dataDay.find((item)=>{
@@ -16,10 +16,10 @@ const cekHariKerja = (day) => {
 }
 
 cekHariKerja('senin')
-.then((hasil)=>{
+.then((hasil) => {
     console.log(hasil)
 })
-.catch((error)=>{
+.catch((error) => {
     console.log(error.message)
 })
 
@@ -30,7 +30,7 @@ const utama = async () => {
         console.log(hariKerja)
         
     } catch (error) {
-        console.log(error)
+        console.log(error.message)
     }
 }
 
